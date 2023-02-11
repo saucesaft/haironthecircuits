@@ -12,7 +12,7 @@
 
       {% include "topbar.njk" %}
 
-      <div class="m-4 mt-0 grow bg-zinc-800 flex items-center justify-center">
+      <div class="m-2 md:mt-0 md:m-4 grow bg-zinc-800 flex items-center justify-center">
 
 	<article class="prose md:prose-lg lg:prose-xl prose-invert p-4">
 	  {{ content | safe }}
@@ -21,10 +21,7 @@
       </div>
 
 
-      <nav class="flex items-center justify-between flex-wrap m-4 mt-0">
-
-        <div class="w-full flex items-center flex-shrink-0 text-white space-x-4">
-	  <span class="tracking-tight px-1 bg-zinc-800">made in mty, mexico</span>
+      <nav class="flex items-center justify-between flex-wrap m-2 md:mt-0 md:m-4 space-y-1 md:space-y-2 lg:space-y-0">
 
 	  {% for banner in banners.list -%}
 	    
@@ -37,8 +34,6 @@
 		  <img src="{{ banner.media }}" class="banners" />
 	      </a>
 	  {% endfor %}
-
-        </div>
 
       </nav>
 

@@ -27,6 +27,18 @@
         {
             "url": "",
             "media": "/img/88x31/emulate.gif"
+        },
+        {
+            "url": "https://www.wikipedia.org",
+            "media": "/img/88x31/wiki.gif"
+        },
+        {
+            "url": "https://www.last.fm/user/saucesaft",
+            "media": "/img/88x31/lastfm.gif"
+        },
+        {
+            "url": "https://es.wikipedia.org/wiki/Monterrey",
+            "media": "/img/88x31/mty.gif"
         }
     ]
 }
