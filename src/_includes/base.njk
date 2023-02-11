@@ -7,9 +7,13 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
   </head>
-  <body>
+  <body class="bg-picnic bg-cover">
     <main>
+
+      {% include "topbar.njk" %}
+
       {{ content | safe }}
+
     </main>
   </body>
 </html>
