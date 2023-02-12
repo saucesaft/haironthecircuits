@@ -1,5 +1,10 @@
+// debugging
 const inspect = require("util").inspect;
 
+// date formatting
+const { DateTime } = require("luxon");
+
+// transofrming tikz code to svg
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const tmp = require('tmp');
@@ -14,6 +19,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/fonts');
 
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
+
+  eleventyConfig.addFilter("readablePostDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {
+        zone: "America/Monterrey",
+    }).setLocale('en').toLocaleString(DateTime.DATE_FULL).toLowerCase();
+  });
 
   // eleventy custom transform to render tikz code section as svgs using
   // locally installed latex installation and dvisvgm

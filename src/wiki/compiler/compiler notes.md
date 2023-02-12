@@ -1,6 +1,7 @@
 ---
 title: compiler notes
 layout: base.njk
+date: 2022-06-16
 tags:
   - compiler
 ---
