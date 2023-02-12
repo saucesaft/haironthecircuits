@@ -1,0 +1,14 @@
+TODO
+-[ ] clickable title
+-[ ] wiki, brain, about, cv buttons
+-[ ] tags
+-[ ] default's page that shows tags
+-[ ] add dates to missing
+-[ ] render latex correctly
+-[ ] create the actual cv page
+-[ ] add footer as another layout for readability
+-[ ] project writeup
+-[ ] recent posts
+-[ ] render image's side by side or atleast complete size, on on top of another
+-[ ] lowercase first letter of titles
+-[ ] website icon!
