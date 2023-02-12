@@ -21,22 +21,21 @@
 	      <span>{{ date | readablePostDate }}</span>
 	  </div>
 
-	  {{ content | safe }}
+	  {{ content | wikimage | safe }}
 	</article>
 
       </div>
 
 
-      <nav class="flex items-center justify-between flex-wrap m-2 md:mt-0 md:m-4 space-y-1 md:space-y-2 lg:space-y-0">
+      <nav class="flex items-center justify-between flex-wrap mx-2 md:mx-4">
 
 	  {% for banner in banners.list -%}
 	    
 	  {% if banner.url != "" %}
-	      <a href="{{ banner.url }}">
+	      <a href="{{ banner.url }}" class="mb-2 mt-0 md:mb-4 md:mt-0">
 	  {% else %}
-	      <a>
+	      <a class="mb-2 mt-0 md:mb-4 md:mt-0">
 	  {% endif %}
-
 		  <img src="{{ banner.media }}" class="banners" />
 	      </a>
 	  {% endfor %}

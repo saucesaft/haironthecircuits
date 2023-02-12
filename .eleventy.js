@@ -11,12 +11,30 @@ const tmp = require('tmp');
 var fs = require('fs');
 const { spawnSync } = require('child_process');
 
+// obsidian image url's
+const markdownIt = require('markdown-it');
+const markdownItOptions = {
+    html: true,
+    linkify: true
+};
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget('./src/css/tailwind.css');
-  eleventyConfig.addPassthroughCopy('./src/img');
-  eleventyConfig.addPassthroughCopy('./src/fonts');
+  eleventyConfig.addWatchTarget('src/css/tailwind.css');
+  eleventyConfig.addPassthroughCopy('src/img');
+  eleventyConfig.addPassthroughCopy('src/fonts');
+  eleventyConfig.addPassthroughCopy({'src/**/img/*': "img" })
+
+  // custom markdown-it instance
+  const md = markdownIt(markdownItOptions)
+    .use(require('markdown-it-attrs'));
+
+  // inline code syntax highlighting
+  md.renderer.rules.code_inline = (tokens, idx, { langPrefix = '' }) => {
+    const token = tokens[idx];
+    return `<code class="${langPrefix}">${token.content}</code>`;
+  };
 
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
 
@@ -25,6 +43,16 @@ module.exports = function(eleventyConfig) {
         zone: "America/Monterrey",
     }).setLocale('en').toLocaleString(DateTime.DATE_FULL).toLowerCase();
   });
+
+  // filter to adapt obsidian's image url's into eleventy compatible ones
+  eleventyConfig.addFilter("wikimage", string => {
+    string = string.replaceAll(/!\[\[(?!.+?:)([^\]\[]+)\]\]/gm, function(s) {
+      const parts = s.slice(3,-2).split("|");
+
+      return md.renderInline(`![${parts[1]}](/img/${parts[0].trim()})`)
+    })
+    return string
+  })
 
   // eleventy custom transform to render tikz code section as svgs using
   // locally installed latex installation and dvisvgm
@@ -127,6 +155,8 @@ module.exports = function(eleventyConfig) {
     return dom.serialize();
 
   });
+
+  eleventyConfig.setLibrary('md', md);
 
   return {
     passthroughFileCopy: true,
