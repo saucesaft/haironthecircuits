@@ -1,6 +1,8 @@
 -[ ] rendering
+    -[X] only rerender if content changes
     -[ ] render latex math correctly
     -[ ] notes in pdf? or actual svgs?
+	-[ ] idea; each page as svg, render as inline in website
     -[ ] render image's side by side or atleast complete size, on on top of another
     -[ ] lowercase first letter of titles
 
@@ -20,6 +22,7 @@
     -[ ] add dates to missing
     -[ ] explanation of each category
 	-[ ] brain; random thoughts, more like a blog, includes also definitions
+	    -[ ] wall of each entry, in alphabetical order
 	-[ ] wiki; current projects, book reviews, notes
 	-[ ] cv; what am i currently doing and what have i done
 	-[ ] about; about

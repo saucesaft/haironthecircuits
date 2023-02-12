@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf public",
     "dev:tailwind": "npx tailwindcss -i src/css/tailwind.css -o public/css/styles.css --watch",
-    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev:eleventy": "npx @11ty/eleventy --serve --incremental",
     "build:tailwind": "npx tailwindcss -i src/css/tailwind.css -o public/css/styles.css --minify",
     "build:eleventy": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy",
     "dev": "npm-run-all clean --parallel dev:*",
