@@ -28,21 +28,7 @@
 
       </div>
 
-
-      <nav class="flex items-center justify-between flex-wrap mx-2 md:mx-4">
-
-	  {% for banner in banners.list -%}
-	    
-	  {% if banner.url != "" %}
-	      <a href="{{ banner.url }}" class="mb-2 mt-0 md:mb-4 md:mt-0">
-	  {% else %}
-	      <a class="mb-2 mt-0 md:mb-4 md:mt-0">
-	  {% endif %}
-		  <img src="{{ banner.media }}" class="banners" />
-	      </a>
-	  {% endfor %}
-
-      </nav>
+      {% include "footer.njk" %}
 
     </main>
   </body>

@@ -10,7 +10,7 @@
     -[X] wiki, brain, about, cv buttons
 	-[ ] check menu is responsive when overflowing
     -[ ] separate content folder?
-    -[ ] add footer as another layout for readability
+    -[X] add footer as another layout for readability
     -[ ] recent posts
     -[ ] clickable title
     -[ ] tags
