@@ -12,7 +12,7 @@
     -[ ] separate content folder?
     -[X] add footer as another layout for readability
     -[ ] recent posts
-    -[ ] clickable title
+    -[X] clickable title
     -[ ] tags
     -[ ] default's page that shows tags
     -[ ] WIKILINKS
@@ -26,7 +26,7 @@
 	    -[ ] wall of each entry, in alphabetical order
 	-[ ] wiki; current projects, book reviews, notes
 	-[ ] cv; what am i currently doing and what have i done
-	-[ ] about; about
+	-[X] about; about
 
 -[ ] misc
     -[ ] website icon!
