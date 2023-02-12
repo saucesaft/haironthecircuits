@@ -7,11 +7,12 @@
     -[ ] lowercase first letter of titles
 
 -[ ] organization
+    -[X] wiki, brain, about, cv buttons
+	-[ ] check menu is responsive when overflowing
     -[ ] separate content folder?
     -[ ] add footer as another layout for readability
     -[ ] recent posts
     -[ ] clickable title
-    -[ ] wiki, brain, about, cv buttons
     -[ ] tags
     -[ ] default's page that shows tags
     -[ ] WIKILINKS
