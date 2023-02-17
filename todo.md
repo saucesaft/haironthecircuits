@@ -8,22 +8,31 @@
 
 -[ ] organization
     -[X] wiki, brain, about, cv buttons
-	-[ ] check menu is responsive when overflowing
+	-[X] check menu is responsive when overflowing (they do not overflow easily)
     -[ ] separate content folder?
     -[X] add footer as another layout for readability
     -[ ] recent posts
     -[X] clickable title
     -[ ] tags
-    -[ ] default's page that shows tags
+    -[X] default's page that shows tags
+	-[X] special tag to hide date in this sections
+	    -[ ] apply this change to home also
+	-[ ] default page with sections
+	    -[ ] brain
+		-[ ] thoughts (date)
+		-[ ] vocabulary (abc)
+	    -[ ] wiki
+		-[ ] each-project (date)
+		-[ ] notes (abc)
     -[ ] WIKILINKS
 
 -[ ] content
+    -[ ] change description element in base.njk
     -[ ] create the actual cv page
     -[ ] project writeup
     -[ ] add dates to missing
     -[ ] explanation of each category
 	-[ ] brain; random thoughts, more like a blog, includes also definitions
-	    -[ ] wall of each entry, in alphabetical order
 	-[ ] wiki; current projects, book reviews, notes
 	-[ ] cv; what am i currently doing and what have i done
 	-[X] about; about
@@ -31,4 +40,5 @@
 -[ ] misc
     -[ ] website icon!
     -[ ] factorio reference
+	-[ ] /factorio/ replaces scroller with a coveyor belt and secret message
     -[ ] bring back the scrolling dynamic phrases

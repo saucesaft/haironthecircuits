@@ -1,6 +1,8 @@
 ---
 title: about
 layout: base.njk
+tags:
+    - nodate
 ---
 
 hello my name is Eduardo, people call me Lalo, but im better know as saucesaft on the internet. Im from the north of México so that's why i'll try to keep the languages balanced depending on the kind of post.
