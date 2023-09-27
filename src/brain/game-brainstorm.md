@@ -17,7 +17,7 @@ keywords: psx
 Artstyle
 https://www.blendswap.com/blend/22459
 https://www.blendswap.com/blend/21543
-keywords: wireframe, monochromatic, dithering, old macs
+keywords: wireframe, monochromatic, dithering, old macs, color banding, jpeg compression
 
 What
 https://en.wikipedia.org/wiki/Role-playing_video_game

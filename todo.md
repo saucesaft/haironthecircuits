@@ -14,9 +14,9 @@
     -[ ] recent posts
     -[X] clickable title
     -[ ] tags
-    -[X] default's page that shows tags
+    -[ ] default's page that shows tags
 	-[X] special tag to hide date in this sections
-	    -[ ] apply this change to home also
+	    -[X] apply this change to home also
 	-[ ] default page with sections
 	    -[ ] brain
 		-[ ] thoughts (date)

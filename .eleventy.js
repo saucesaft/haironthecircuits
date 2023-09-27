@@ -22,6 +22,7 @@ const markdownItOptions = {
 module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget('src/css/tailwind.css');
+  eleventyConfig.addPassthroughCopy('src/work/cv.pdf');
   eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.addPassthroughCopy('src/fonts');
   eleventyConfig.addPassthroughCopy({'src/**/img/*': "img" })
@@ -37,6 +38,8 @@ module.exports = function(eleventyConfig) {
   };
 
   eleventyConfig.addFilter("debug", (content) => `<pre>${inspect(content)}</pre>`);
+  
+  eleventyConfig.addFilter("types", (content) => `${typeof(content)}`);
 
   eleventyConfig.addFilter("readablePostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, {

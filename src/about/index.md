@@ -13,7 +13,7 @@ hello my name is Eduardo, people call me Lalo, but im better know as saucesaft o
 - sauce [in english] = thick _liquid_ served with food, usually savory dishes, to add moistness and flavor.
 - saft [in german] = the _liquid_ obtained from or present in fruit or vegetables.
 
-i mixed the words because i thought funny, thats it lol
+i mixed the words because i thought it was funny, thats it lol
 
 #### why *hair on the circuits?*
 white noise by noah baumbach - 1:00:21
